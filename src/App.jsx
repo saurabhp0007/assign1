@@ -1,9 +1,9 @@
 import './App.css'
 import Login from './Components/Login'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import LoginPage from './Components/LoginPage'
-import Register from './Components/Register'
-import Profile from './Components/Profile'
+import LoginPage from './Page/LoginPage'
+import Register from './Page/Register'
+import Profile from './Page/Profile'
 
 function App() {
  
@@ -28,7 +28,6 @@ function App() {
 
   return (
     <>
-    
       <RouterProvider router={router} />
     </>
   )
