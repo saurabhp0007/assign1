@@ -1,6 +1,6 @@
 import './App.css'
 import Login from './Components/Login'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { BrowserRouter, RouterProvider, createBrowserRouter } from 'react-router-dom'
 import LoginPage from './Page/LoginPage'
 import Register from './Page/Register'
 import Profile from './Page/Profile'
@@ -28,7 +28,9 @@ function App() {
 
   return (
     <>
-      <RouterProvider router={router} />
+      <BrowserRouter>
+      <RouterProvider routes={routes} />
+    </BrowserRouter>
     </>
   )
 }
